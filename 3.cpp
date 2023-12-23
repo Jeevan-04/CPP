@@ -1,0 +1,1 @@
+//given that empployee class contain following members: Data members: employee no. , employee name, basic salary, DA (daily allowance), Net Salary, and print data members;The employee designaetions are: Principal, HOD, Proffessor, Lab Assistant;
