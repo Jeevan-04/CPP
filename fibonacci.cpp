@@ -3,27 +3,24 @@ using namespace std;
 
 int main()
 {
-    int num, firstTerm = 0, secondTerm = 1, nextTerm;
+    int num[100]={0};
+    num[0]= 0;
+    num[1]=1;
 
-    cout << "Enter the number of terms for Fibonacci sequence: ";
-    cin >> num;
+    int a;
+    cout<< "Enter the n'th term till where the fibonacci you need: ";
+    cin>>a;
 
-    cout << "Fibonacci Series: ";
-
-    for (int i = 1; i <= num; ++i) {
-        if(i == 1) {
-            cout << firstTerm << " ";
-            continue;
-        }
-        if(i == 2) {
-            cout << secondTerm << " ";
-            continue;
-        }
-        nextTerm = firstTerm + secondTerm;
-        firstTerm = secondTerm;
-        secondTerm = nextTerm;
-        cout << nextTerm << " ";
+    for (int i = 2; i <= a; i++)
+    {
+        num[i] = num[i-1] + num [i-2] ;
     }
+    cout<< "The fibonacci series upto "<< a <<" term are: "<<endl;
 
+
+    for (int j = 0; j <=a; j++)
+    {
+        cout<< num[j]<<" ";
+    }
     return 0;
 }

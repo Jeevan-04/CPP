@@ -3,26 +3,16 @@ using namespace std;
 
 int main()
 {
-    int n;
-    cout<<"Enter the value of 'n' for pattern: ";
-    cin>>n;
-    
-    for (int i = 1; i <=n; i++)
+  for (int i = 1; i <= 1;i++)
+  {
+    for (int j = 1; j <= i;j++)
     {
-        for (int j =0 ; j < i; j++)
-        {
-            cout<<"*";
-        }
-        cout<<endl;
+        cout<< " ";
+        break;
     }
-    for (int a = n-1; a > 0; a--)
-    {
-        for (int b = a; b > 0; b--)
-        {
-            cout<<"*";
-        }
-        cout<<endl;
-    }
-    
-    return 0;
+    cout<< endl;
+    cout<< " @ @ @ @ @ @ "<<endl<<"@@         @@"<<endl<<"@           @"<<endl<<"@           @"<<endl<<"@           @"<<endl<< " @ @ @ @ @ @ ";
+  }cout<<endl; 
+  cout<<endl;
+  return 0;
 }
